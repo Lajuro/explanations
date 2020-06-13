@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, h6, b {
+    color: #1a1f32;
+}
+
 .wrapper {
     display: flex;
     height: calc(100vh - 56px);
@@ -90,6 +94,38 @@
 }
 
 .sidebar .menu .menu-item .menu-link.active {
-    padding-left: 1.5rem;
+    padding-left: 2rem;
     background-color: #414970;
+    animation: slideRight 1s linear forwards;
+}
+
+main {
+    margin-top: 0;
+    width: 100%;
+    opacity: 0;
+    animation: show 1s linear forwards;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        margin-top: 20px;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        padding: 0.5rem;
+        padding-left: 1rem;
+    }
+    100% {
+        transform: translateY(0);
+        padding: 0.5rem;
+        padding-left: 2rem;
+    }
 }
