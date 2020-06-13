@@ -1,0 +1,95 @@
+.wrapper {
+    display: flex;
+    height: calc(100vh - 56px);
+    width: 100%;
+}
+
+.navbar {
+    background-color: #1a1f32;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.division {
+    background-color: #1a1f32;
+    width: 85%;
+    height: 2px;
+    margin: auto;
+}
+
+.sidebar {
+    width: 13%;
+    background-color: #2a3150;
+}
+
+.sidebar .profile {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.sidebar .profile .image {
+    width: 125px;
+    height: 125px;
+    background: #a1a1a1;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.sidebar .profile .description {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.sidebar .profile .description p {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar .profile .description .name {
+    font-weight: bold;
+}
+
+/* ## MENU CLASSES ##
+* .menu
+* .menu-item
+* .menu-link 
+*/
+
+.sidebar .menu {
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar .menu .menu-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sidebar .menu .menu-item:hover {
+    background-color: #414970;
+}
+
+.sidebar .menu .menu-item .menu-link {
+    display: block;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.sidebar .menu .menu-item .menu-link.active {
+    padding-left: 1.5rem;
+    background-color: #414970;
+}
